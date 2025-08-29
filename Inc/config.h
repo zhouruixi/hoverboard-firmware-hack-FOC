@@ -515,10 +515,10 @@
   #define AUX_INPUT1            3, -1000, 0, 1000, 100  // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
   #define AUX_INPUT2            3, -1000, 0, 1000, 100  // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
 
-  #define FILTER                  6553    // 0.1f [-] fixdt(0,16,16) lower value == softer filter [0, 65535] = [0.0 - 1.0].
+  #define FILTER                  3276    // 0.05f [-] fixdt(0,16,16) lower value == softer filter [0, 65535] = [0.0 - 1.0].
 
   #define SPEED_COEFFICIENT       16384     // 1.0f
-  #define STEER_COEFFICIENT       16384      // 1.0f
+  #define STEER_COEFFICIENT       2048      // 0.125f
   // #define ADC_ALTERNATE_CONNECT             // use to swap ADC inputs
   // #define INVERT_R_DIRECTION                // Invert rotation of right motor
   // #define INVERT_L_DIRECTION                // Invert rotation of left motor
