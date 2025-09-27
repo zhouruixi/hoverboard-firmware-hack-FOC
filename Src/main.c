@@ -220,7 +220,7 @@ int main(void) {
       rate = MULTI_MODE_DRIVE_M3_RATE;
       rtP_Left.n_max = rtP_Right.n_max = MULTI_MODE_M3_N_MOT_MAX << 4;
       rtP_Left.i_max = rtP_Right.i_max = (MULTI_MODE_M3_I_MOT_MAX * A2BIT_CONV) << 4;
-    } else if (adc_buffer.l_tx2 > input1[0].min + 50) {
+    } else if (adc_buffer.l_rx2 > input1[0].min + 50) {
       drive_mode = 1;
       max_speed = MULTI_MODE_DRIVE_M2_MAX;
       rate = MULTI_MODE_DRIVE_M2_RATE;
